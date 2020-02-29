@@ -1,10 +1,10 @@
-const express = require('express');
-const path = require('path');
-const favicon = require('serve-favicon');
-const bodyParser = require('body-parser');
+import express from 'express';
+import path from 'path';
+import favicon from 'serve-favicon';
+import bodyParser from 'body-parser';
 
-const clothing = require('./server/routes/clothing');
-const errors = require('./server/routes/errors');
+import clothing from './server/routes/clothing';
+import errors from './server/routes/errors';
 
 const app = express();
 

@@ -1,6 +1,6 @@
-var express = require('express');
-var fs = require('fs');
-var router = express.Router();
+import express from 'express';
+import fs from 'fs';
+let router = express.Router();
 
 /* GET all books and POST new readers */
 router.route('/500')
@@ -13,4 +13,4 @@ router.route('/401')
         res.status(401).send('Book Tracker unauthorized.');
     });
 
-module.exports = router;
+export default router;
